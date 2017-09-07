@@ -1,6 +1,6 @@
 /* Reset */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, big, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, section {
     margin: 0;
     padding: 0;
     border: 0;
@@ -9,20 +9,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+section {
     display: block;
-}
-
-body {
-    line-height: 1;
 }
 
 ol, ul {
     list-style: none;
-}
-
-body {
-    -webkit-text-size-adjust: none;
 }
 
 /* Box Model */
@@ -44,24 +36,18 @@ body {
     width: device-width;
 }
 
-body {
-    -ms-overflow-style: scrollbar;
-}
-
 @media screen and (max-width: 480px) {
-
     html, body {
         min-width: 320px;
     }
-
 }
 
 body {
+    line-height: 1;
+    -webkit-text-size-adjust: none;
+    -ms-overflow-style: scrollbar;
     background: #ffffff;
     color: #565656;
-}
-
-body, input, select, textarea {
     font-family: Quicksand, Helvetica, sans-serif;
     font-size: 14pt;
     font-weight: 300;
@@ -70,37 +56,33 @@ body, input, select, textarea {
 }
 
 @media screen and (max-width: 1680px) {
-    body, input, select, textarea {
+    body {
         font-size: 12pt;
     }
 }
 
 @media screen and (max-width: 1280px) {
-    body, input, select, textarea {
+    body {
         font-size: 11pt;
     }
 }
 
 @media screen and (max-width: 980px) {
-    body, input, select, textarea {
+    body {
         font-size: 12pt;
     }
 }
 
 @media screen and (max-width: 736px) {
-    body, input, select, textarea {
+    body {
         font-size: 11pt;
     }
 }
 
 @media screen and (max-width: 360px) {
-    body, input, select, textarea {
+    body {
         font-size: 10.5pt;
     }
-}
-
-input, select, textarea {
-    color: inherit;
 }
 
 a {
@@ -411,7 +393,6 @@ ul.actions li:last-child {
 }
 
 @media screen and (max-width: 480px) {
-
     ul.actions {
         margin: 0 auto 2em auto;
         max-width: 23em;
@@ -432,7 +413,6 @@ ul.actions li:last-child {
         width: 100%;
         margin: 0 !important;
     }
-
 }
 
 ul.alt li {
@@ -468,7 +448,6 @@ section.special header h2:before, section.special header h3:before, section.spec
 }
 
 @media screen and (max-width: 736px) {
-
     section header p, article header p {
         font-size: 1em;
     }
@@ -476,7 +455,6 @@ section.special header h2:before, section.special header h3:before, section.spec
     section header p br, article header p br {
         display: none;
     }
-
 }
 
 /* Spotlight */
@@ -543,7 +521,6 @@ section.special header h2:before, section.special header h3:before, section.spec
 }
 
 @media screen and (max-width: 1280px) {
-
     .spotlight .image {
         margin: 0 0 0 1.5em;
     }
@@ -559,11 +536,9 @@ section.special header h2:before, section.special header h3:before, section.spec
     .spotlight:nth-of-type(2n) .content {
         margin: 0 0 0 1.5em;
     }
-
 }
 
 @media screen and (max-width: 980px) {
-
     .spotlight {
         display: block;
     }
@@ -588,23 +563,18 @@ section.special header h2:before, section.special header h3:before, section.spec
         border-bottom: solid 1px;
         padding-bottom: 4em !important;
     }
-
 }
 
 @media screen and (max-width: 736px) {
-
     .spotlight:first-of-type {
         margin-top: 0;
     }
-
 }
 
 @media screen and (max-width: 980px) {
-
     .spotlight:last-of-type {
         border-bottom-color: rgba(86, 86, 86, 0.25);
     }
-
 }
 
 /* Wrapper */
@@ -620,11 +590,9 @@ section.special header h2:before, section.special header h3:before, section.spec
 }
 
 @media screen and (max-width: 1680px) {
-
     .wrapper > .inner {
         width: 64em;
     }
-
 }
 
 .wrapper.style2 {
@@ -634,10 +602,10 @@ section.special header h2:before, section.special header h3:before, section.spec
 .wrapper.style3 {
     background-color: #565656;
     color: #ffffff;
-    background-image: -moz-linear-gradient(to top, rgba(86, 86, 86, 0.7), rgba(86, 86, 86, 0.7)), url("../../images/pic05.jpg");
-    background-image: -webkit-linear-gradient(to top, rgba(86, 86, 86, 0.7), rgba(86, 86, 86, 0.7)), url("../../images/pic05.jpg");
-    background-image: -ms-linear-gradient(to top, rgba(86, 86, 86, 0.7), rgba(86, 86, 86, 0.7)), url("../../images/pic05.jpg");
-    background-image: linear-gradient(to top, rgba(86, 86, 86, 0.7), rgba(86, 86, 86, 0.7)), url("../../images/pic05.jpg");
+    background-image: -moz-linear-gradient(to top, rgba(86, 86, 86, 0.7), rgba(86, 86, 86, 0.7)), url("../images/blur.jpg");
+    background-image: -webkit-linear-gradient(to top, rgba(86, 86, 86, 0.7), rgba(86, 86, 86, 0.7)), url("../images/blur.jpg");
+    background-image: -ms-linear-gradient(to top, rgba(86, 86, 86, 0.7), rgba(86, 86, 86, 0.7)), url("../images/blur.jpg");
+    background-image: linear-gradient(to top, rgba(86, 86, 86, 0.7), rgba(86, 86, 86, 0.7)), url("../images/blur.jpg");
     background-size: cover, cover;
     background-position: center, center;
     background-repeat: repeat, no-repeat;
@@ -670,19 +638,13 @@ section.special header h2:before, section.special header h3:before, section.spec
 }
 
 @media screen and (max-width: 980px) {
-
     .wrapper.style3 .spotlight:last-of-type {
         border-bottom-color: rgba(255, 255, 255, 0.25);
     }
 
-}
-
-@media screen and (max-width: 980px) {
-
     .wrapper.style3 > .inner.split > :first-child {
         border-bottom-color: rgba(255, 255, 255, 0.25);
     }
-
 }
 
 .wrapper.featured {
@@ -729,7 +691,6 @@ section.special header h2:before, section.special header h3:before, section.spec
 }
 
 @media screen and (max-width: 1280px) {
-
     .wrapper.featured > .inner {
         padding: 0;
     }
@@ -741,11 +702,9 @@ section.special header h2:before, section.special header h3:before, section.spec
     .wrapper.featured > .inner > .content p {
         font-size: 1.25em;
     }
-
 }
 
 @media screen and (max-width: 980px) {
-
     .wrapper.featured > .inner {
         display: block;
         text-align: center;
@@ -759,11 +718,9 @@ section.special header h2:before, section.special header h3:before, section.spec
     .wrapper.featured > .inner > .content p {
         margin: 0 0 2em 0;
     }
-
 }
 
 @media screen and (max-width: 736px) {
-
     .wrapper.featured > .inner > .image {
         margin: 0 auto 2.5em auto;
         width: 13em;
@@ -776,20 +733,16 @@ section.special header h2:before, section.special header h3:before, section.spec
     .wrapper.featured > .inner > .content p {
         font-size: 1em;
     }
-
 }
 
 @media screen and (max-width: 360px) {
-
     .wrapper.featured > .inner > .image {
         margin: 0 auto 2em auto;
         width: 11em;
     }
-
 }
 
 @media screen and (max-width: 1280px) {
-
     .wrapper {
         padding: 6em 3em 4em 3em;
     }
@@ -797,31 +750,24 @@ section.special header h2:before, section.special header h3:before, section.spec
     .wrapper > .inner {
         width: 100%;
     }
-
 }
 
 @media screen and (max-width: 736px) {
-
     .wrapper {
         padding: 4em 2em 2em 2em;
     }
-
 }
 
 @media screen and (max-width: 480px) {
-
     .wrapper {
         padding: 4em 1.5em 2em 1.5em;
     }
-
 }
 
 @media screen and (max-width: 360px) {
-
     .wrapper {
         padding: 3em 1em 1em 1em;
     }
-
 }
 
 /* Intro */
@@ -858,14 +804,12 @@ body.is-loading #intro .content {
 }
 
 @media screen and (max-width: 980px) {
-
     body.is-loading #intro .content {
         -moz-transform: translateY(0.35em);
         -webkit-transform: translateY(0.35em);
         -ms-transform: translateY(0.35em);
         transform: translateY(0.35em);
     }
-
 }
 
 /* Icons */
