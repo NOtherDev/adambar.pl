@@ -482,6 +482,10 @@ section.special header h2:before, section.special header h3:before, section.spec
     -ms-flex: 1;
 }
 
+.spotlight.portfolio .image {
+    width: 25%;
+}
+
 .spotlight .image img {
     width: 100%;
 }
@@ -490,6 +494,10 @@ section.special header h2:before, section.special header h3:before, section.spec
     margin: 0 2em 0 0;
     width: 50%;
     -ms-flex: 1;
+}
+
+.spotlight.portfolio .content {
+    width: 75%;
 }
 
 .spotlight .content header h2:before, .spotlight .content header h3:before, .spotlight .content header h4:before, .spotlight .content header h5:before, .spotlight .content header h6:before {
