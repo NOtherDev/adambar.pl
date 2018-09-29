@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adam Bar - Szkolenie PWA</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/quicksand/v6/sKd0EMYPAh5PYCRKSryvW5Bw1xU1rKptJj_0jans920.woff2"
+          crossorigin="anonymous" type="font/woff2" />
+
+    <style>
+        /* latin */
+        @font-face {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v6/sKd0EMYPAh5PYCRKSryvW5Bw1xU1rKptJj_0jans920.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    document.body.className = 'is-loading';
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            document.body.className = '';
+        }, 100);
+    });
+</script>
+
+<!-- Header -->
+<header id="header" class="back">
+    <nav>
+        <ul>
+            <li><a href="pl.html">Wróć</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="wrapper">
+
+    <section class="wrapper style1 special">
+        <div class="inner">
+            <h2>Szkolenie Progresywne Aplikacje Webowe (PWA)</h2>
+            <section class="spotlight">
+                <span class="image">
+                    <img src="images/codeeurope.jpg" alt="Ja na Code Europe, Wrocław 2017">
+                </span>
+                <div class="content">
+                    <ul class="alt">
+                        <li>30% wykłady / 70% warsztaty</li>
+                        <li>Czas trwania: 1-3 days</li>
+                        <li>Grupa docelowa: średnio-zaawansowani i zaawansowani developerzy front-endu</li>
+                    </ul>
+
+                    <p>Szkolenie obejmuje szeroki zakres tematów związanych z wykorzystaniem nowoczesnych technologii
+                        webowych do tworzenia aplikacji, w tym obsługę trybu offline, powiadomienia oraz integrację
+                        z mobilnymi systemami operacyjnymi. W ramach szkolenia przedstawiane są również techniki
+                        optymalizacji wydajności stron internetowych.</p>
+                    <p>Dzięki temu szkoleniu zespół będzie potrafił wykorzystać potencjał platformy webowej
+                        do szerszych niż zwykle zastosowań, w szczególności tworzyć aplikacje kojarzone dotąd wyłącznie
+                        z natywnymi technologiami mobilnymi. Może to pozwolić na uproszczenie procesów i ograniczenie
+                        kosztów wytwarzania tych aplikacji. Ponadto, dzięki zdobytej wiedzy na temat optymalizacji
+                        wydajności, tworzone aplikacje mogą być lepiej odbierane przez ich użytkowników, co według
+                        statystyk może wprost przekładać się na większe konwersje.</p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="wrapper style3 special">
+        <div class="inner">
+            <section>
+                <h2>Wyróżniki szkolenia</h2>
+
+                <ul class="alt">
+                    <li>wykorzystujemy najnowsze dostępne rozwiązania</li>
+                    <li>położymy nacisk na optymalizację wydajności</li>
+                    <li>zadbamy o wspieranie możliwie wielu urządzeń mobilnych</li>
+                </ul>
+            </section>
+        </div>
+    </section>
+
+    <section class="wrapper style2">
+        <div class="inner">
+            <section class="special">
+                <h2>Program szkolenia</h2>
+            </section>
+            <section>
+                <ol>
+                    <li>Co to są Progresywne Aplikacje Webowe (PWA)?
+                        <ol>
+                            <li>Dlaczego PWA? Korzyści, metryki i przykłady wdrożeń</li>
+                            <li>Różnice i korzyści w stosunku do aplikacji natywnych</li>
+                            <li>Wsparcie technologii PWA w przeglądarkach</li>
+                        </ol>
+                    </li>
+                    <li>Service Worker
+                        <ol>
+                            <li>Web App Manifest</li>
+                            <li>Wsparcie trybu offline - strategie i dobre praktyki</li>
+                            <li>Dodawanie do ekranu głównego</li>
+                            <li>Obsługa powiadomień Push</li>
+                            <li>Background synchronization</li>
+                            <li>Narzędzia wspomagające: Workbox.js</li>
+                            <li>Strategie testowania Service Workerów</li>
+                        </ol>
+                    </li>
+                    <li>Podstawy progressive enhancement
+                        <ol>
+                            <li>Dobre praktyki zapewniające kompatybilność wsteczną</li>
+                            <li>Zasady dostosowywania natywnych komponentów HTML</li>
+                            <li>Offline-first</li>
+                            <li>Architektura App-Shell</li>
+                        </ol>
+                    </li>
+                    <li>Specyfika "mobile weba"
+                        <ol>
+                            <li>Responsive Web Design, media queries</li>
+                            <li>Elementy CSS-a pomocne w projektowaniu stron mobilnych</li>
+                            <li>Device orientation</li>
+                            <li>Viewports (layout viewport vs. visual viewport)</li>
+                        </ol>
+                    </li>
+                    <li>Integracja aplikacji z systemem operacyjnym
+                        <ol>
+                            <li>Geolokacja</li>
+                            <li>Obsługa dotyku i gestów</li>
+                            <li>Dostęp do aparatu</li>
+                            <li>Web Share API</li>
+                            <li>Payment Request API</li>
+                        </ol>
+                    </li>
+                    <li>Optymalizacja wydajności
+                        <ol>
+                            <li>Metody mierzenia i testowania wydajności stron</li>
+                            <li>Ścieżka krytyczna ładowania elementów</li>
+                            <li>Kluczowe elementy optymalizacji renderowania (“pixel pipeline”)</li>
+                            <li>Optymalizacja ładowania obrazków</li>
+                            <li>Narzędzia - Chrome DevTools, debugowanie zdalne, Lighthous</li>
+                        </ol>
+                    </li>
+                </ol>
+            </section>
+        </div>
+    </section>
+
+
+    <section class="wrapper style3 special">
+        <div class="inner">
+            <section>
+                <h2>Zaproś mnie</h2>
+
+                <p>Spotkanie może mieć format prelekcji (zobacz sekcję <a href="index.html#speaking">Prezentacje</a>), kilkugodzinnego warsztatu aż do trzydniowego interaktywnego szkolenia.</p>
+                <p>Brzmi interesująco? <a href="mailto:czesc@adambar.pl">Napisz do mnie</a>, ustalimy szczegóły treści, formatu i dostępności.</p>
+            </section>
+        </div>
+    </section>
+
+    <section id="footer" class="wrapper style2 special">
+        <div class="inner">
+            <header>
+                <h2>Kontakt</h2>
+            </header>
+            <ul class="icons">
+                <li><a href="mailto:czesc@adambar.pl" class="icon fa-envelope"><span class="label">E-mail</span></a></li>
+                <li><a href="https://twitter.com/NOtherDev" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.linkedin.com/in/adamrbar/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/NOtherDev" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-106129996-1', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>

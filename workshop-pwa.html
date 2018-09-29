@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adam Bar - PWA Workshop</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/quicksand/v6/sKd0EMYPAh5PYCRKSryvW5Bw1xU1rKptJj_0jans920.woff2"
+          crossorigin="anonymous" type="font/woff2" />
+
+    <style>
+        /* latin */
+        @font-face {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v6/sKd0EMYPAh5PYCRKSryvW5Bw1xU1rKptJj_0jans920.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    document.body.className = 'is-loading';
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            document.body.className = '';
+        }, 100);
+    });
+</script>
+
+<!-- Header -->
+<header id="header" class="back">
+    <nav>
+        <ul>
+            <li><a href="/">Back</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="wrapper">
+
+    <section class="wrapper style1 special">
+        <div class="inner">
+            <h2>Progressive Web Apps (PWA) Workshop</h2>
+            <section class="spotlight">
+                <span class="image">
+                    <img src="images/codeeurope.jpg" alt="Me at Code Europe, Wrocław 2017">
+                </span>
+                <div class="content">
+                    <ul class="alt">
+                        <li>30% lectures / 70% workshop</li>
+                        <li>Timeframe: 1-3 days</li>
+                        <li>Target group: mid- to experienced front-end developers</li>
+                    </ul>
+
+                    <p>The workshop covers a wide range of topics related with modern web technologies, including but not limited to offline mode,
+                        notifications and mobile operating systems integration. There is also a section about performance optimization included.</p>
+                    <p>After this workshop your team will be able to take advantage of the Web Platform's capabilities for wider range of use cases,
+                        in particular to create applications with features previously available for native development only. It may allow to simplify
+                        development processes and reduce the cost. Moreover, thanks to the newly gained knowledge about performance optimizations,
+                        your applications might be perceived better by their users, what in turn might directly surface with better conversion rates.</p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="wrapper style3 special">
+        <div class="inner">
+            <section>
+                <h2>Key facts</h2>
+
+                <ul class="alt">
+                    <li>we will use the newest techniques available</li>
+                    <li>we will focus on performance optimizations</li>
+                    <li>we will take care about supporting possibly broad range of mobile devices</li>
+                </ul>
+            </section>
+        </div>
+    </section>
+
+    <section class="wrapper style2">
+        <div class="inner">
+            <section class="special">
+                <h2>Programme</h2>
+            </section>
+            <section>
+                <ol>
+                    <li>What are Progressive Web Apps (PWA)?
+                        <ol>
+                            <li>Why PWA? Advantages, metrics and application examples</li>
+                            <li>Differences and advantages over native applications</li>
+                            <li>The support of PWAs in the browsers</li>
+                        </ol>
+                    </li>
+                    <li>Service Worker
+                        <ol>
+                            <li>Web App Manifest</li>
+                            <li>Offline mode support - strategies and practices</li>
+                            <li>Adding to Home Screen</li>
+                            <li>Push Notifications</li>
+                            <li>Background synchronization</li>
+                            <li>Toolset: Workbox.js</li>
+                            <li>Service Workers testing strategies</li>
+                        </ol>
+                    </li>
+                    <li>Basics of progressive enhancement
+                        <ol>
+                            <li>Backward compatibility good practices</li>
+                            <li>Customizing native HTML components</li>
+                            <li>Offline-first</li>
+                            <li>App-Shell Architecture</li>
+                            <li>"Mobile Web" specifics</li>
+                        </ol>
+                    </li>
+                    <li>"Mobile Web" specifics
+                        <ol>
+                            <li>Responsive Web Design, media queries</li>
+                            <li>CSS elements useful in designing for mobile</li>
+                            <li>Device orientation</li>
+                            <li>Viewports (layout viewport vs. visual viewport)</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Integration with operating system
+                        <ol>
+                            <li>Geolocation</li>
+                            <li>Touch and gestures support</li>
+                            <li>Camera access</li>
+                            <li>Web Share API</li>
+                            <li>Payment Request API</li>
+                        </ol>
+                    </li>
+                    <li>Performance optimizations
+                        <ol>
+                            <li>Testing and measuring performance</li>
+                            <li>Resource loading critical path</li>
+                            <li>Key elements of rendering performance (“pixel pipeline”)</li>
+                            <li>Image loading optimization</li>
+                            <li>Tools - Chrome DevTools, remote debugging, Lighthouse</li>
+                        </ol>
+                    </li>
+                </ol>
+            </section>
+        </div>
+    </section>
+
+
+    <section class="wrapper style3 special">
+        <div class="inner">
+            <section>
+                <h2>Invite me</h2>
+
+                <p>The format might vary from the short talk (see <a href="index.html#speaking">Speaking</a> section), 3-4h of workshop up to three full days of interactive training.</p>
+                <p>Sounds interesting? <a href="mailto:hi@adambar.pl">Contact me</a> and we'll discuss the details about the content, format and availability.</p>
+            </section>
+        </div>
+    </section>
+
+    <section id="footer" class="wrapper style2 special">
+        <div class="inner">
+            <header>
+                <h2>Get in touch</h2>
+            </header>
+            <ul class="icons">
+                <li><a href="mailto:hi@adambar.pl" class="icon fa-envelope"><span class="label">E-mail</span></a></li>
+                <li><a href="https://twitter.com/NOtherDev" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.linkedin.com/in/adamrbar/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/NOtherDev" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-106129996-1', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>
