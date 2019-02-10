@@ -29,6 +29,13 @@
             src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v6/sKd0EMYPAh5PYCRKSryvW5Bw1xU1rKptJj_0jans920.woff2) format('woff2');
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
         }
+        @font-face {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Quicksand Bold'), local('Quicksand-Bold'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_pkHEYT8L_FYzokA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
     </style>
 </head>
 <body>
@@ -67,6 +74,7 @@
                     <ul class="actions">
                         <li><a href="#about" class="button big">O mnie</a></li>
                         <li><a href="#workshops" class="button big">Szkolenia</a></li>
+                        <li><a href="#services" class="button big">Usługi</a></li>
                     </ul>
                 </footer>
             </div>
@@ -77,6 +85,14 @@
         <div class="inner">
             <header>
                 <h2>O mnie</h2>
+
+                <ul class="alt">
+                    <li><strong>pasjonat Mobile Web'a</strong></li>
+                    <li><strong>twórca serwisu <a href="https://whatwebcando.today/" target="_blank">What Web Can Do Today</a></strong></li>
+                    <li><strong>trener technologii front-endowych w <a href="https://bottega.com.pl/trener-adam-bar" target="_blank">Bottega IT Minds</a></strong></li>
+                    <li><strong>full-stack developer i tech lead doświadczony w kilku stosach technologicznych, ostatnio wierny TypeScriptowi</strong></li>
+                </ul>
+
                 <p>Swoją drogę zawodową zacząłem 10 lat temu od prostych stron w PHP. Później zahaczyłem m.in. o .NET,
                     Ruby, Javę i Objective-C, ale zawsze wracam do Weba, którego cenię za otwartość i dostępność
                     dla wszystkich. I choć uwielbiam proste struktury, proste reguły i porządek, których nieraz próżno
@@ -121,21 +137,21 @@
                     </div>
                     <div class="content">
                         <ul class="alt">
-                            <li><a href="https://slides.com/adambar/wwcd" target="_blank">What Web Can Do Today?</a><br/>
+                            <li><strong><a href="https://slides.com/adambar/wwcd" target="_blank">What Web Can Do Today?</a></strong><br/>
                                 Code Europe, Wrocław, maj 2017<br/>
                                 Dev#, Gdańsk, wrzesień 2018<br/>
                             </li>
-                            <li><a href="https://slides.com/adambar/mobilewebperf" target="_blank">Looking for the Holy Grail of Mobile Web Performance</a> (po angielsku)<br/>
+                            <li><strong><a href="https://slides.com/adambar/mobilewebperf" target="_blank">Looking for the Holy Grail of Mobile Web Performance</a></strong> (po angielsku)<br/>
                                 DevConf, Kraków, wrzesień 2017 (<a href="https://www.youtube.com/watch?v=tSVXspwx018" target="_blank">🎥 nagranie</a>)<br/>
                                 meet.js Summit, Gdańsk, wrzesień 2017 (<a href="https://www.youtube.com/watch?v=Et7bwk5gQRA" target="_blank">🎥 nagranie</a>)<br/>
                                 HighLoad++, Moskwa, listopad 2017 (<a href="https://www.youtube.com/watch?v=RH9dWEBwsZU" target="_blank">🎥 nagranie</a>)<br/>
                                 Jfokus, Sztokholm, luty 2018 (<a href="https://www.youtube.com/watch?v=RyxlgqbWrGk" target="_blank">🎥 nagranie</a>)<br/>
                                 4Developers, Warszawa, kwiecień 2018 (po polsku; <a href="https://www.youtube.com/watch?v=uorR-mWZgSk" target="_blank">🎥 nagranie</a>)<br/>
                             </li>
-                            <li><a href="https://slides.com/adambar/mobilewebperf" target="_blank">Looking for the Holy Grail of Mobile Web Performance</a> (po polsku)<br/>
+                            <li><strong><a href="https://slides.com/adambar/mobilewebperf" target="_blank">Looking for the Holy Grail of Mobile Web Performance</a></strong> (po polsku)<br/>
                                 4Developers, Warszawa, kwiecień 2018 (<a href="https://www.youtube.com/watch?v=uorR-mWZgSk" target="_blank">🎥 nagranie</a>)<br/>
                             </li>
-                            <li><a href="https://www.youtube.com/watch?v=2LiVkyS9Co4" target="_blank">🎥 Webinar: Jak zostać Fullstackiem?</a> (wraz z <a href="https://michalczukm.xyz" target="_blank">Michałem Michalczukiem</a>)</li>
+                            <li><strong><a href="https://www.youtube.com/watch?v=2LiVkyS9Co4" target="_blank">🎥 Webinar: Jak zostać Fullstackiem?</a></strong> (wraz z <a href="https://michalczukm.xyz" target="_blank">Michałem Michalczukiem</a>)</li>
                         </ul>
                     </div>
                 </section>
@@ -143,7 +159,7 @@
         </div>
     </section>
 
-    <section class="wrapper style1 special">
+    <section class="wrapper style3 special">
         <div class="inner">
             <header id="workshops">
                 <h2>Szkolenia</h2>
@@ -173,6 +189,41 @@
                     </div>
                 </section>
             </header>
+        </div>
+    </section>
+
+    <section class="wrapper style1 special" id="services">
+        <div class="inner">
+            <section class="spotlight">
+                <span class="image">
+                    <img src="images/audits.jpeg" alt="Audyty Front-endu"/>
+                </span>
+                <div class="content">
+                    <header>
+                        <h3>Audyty Front-endu</h3>
+                    </header>
+                    <p>Ocenię jakość kodu Waszej aplikacji front-endowej, niezależnie czy jest to oparty o jQuery system legacy,
+                        czy nowoczesny Single-Page App napisany w najnowszym modnym frameworku. Pomogę Waszemu zespołowi wybrać
+                        kierunki architektoniczne, zasugeruję odpowiednie narzędzia i porównam Wasz kod ze standardami.</p>
+                </div>
+            </section>
+            <section class="spotlight">
+                <span class="image">
+                    <img src="images/consulting.jpeg" alt="Consulting - Mobile Web"/>
+                </span>
+                <div class="content">
+                    <header>
+                        <h3>Consulting - Mobile Web</h3>
+                    </header>
+                    <p>Pomogę Waszemu zespołowi pokonać stojące przed Wami wyzwania. Oferuję doświadczenie w zagadnieniach Weba
+                        na urządzeniach mobilnych oraz związanych z PWA. Wesprę merytorycznie Wasze dążenia do osiągnięcia
+                        wysokiej wydajności front-endu i poprawię Wasze metryki odnośnie renderowania.</p>
+                </div>
+            </section>
+            <section>
+                <p class="content">Moje doświadczenie bazuje wokół <strong>Progresywnych Aplikacji Webowych</strong> oraz stosu technologicznego <strong>dużych SPA z React.js'em</strong> tech stack
+                    z użyciem Reduksa, web socketów, map oraz integracji z Blockchainem.</p>
+            </section>
         </div>
     </section>
 
