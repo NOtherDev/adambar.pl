@@ -33,6 +33,7 @@
             font-weight: 400;
             src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v6/sKd0EMYPAh5PYCRKSryvW5Bw1xU1rKptJj_0jans920.woff2) format('woff2');
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+            font-display: swap;
         }
         @font-face {
             font-family: 'Quicksand';
@@ -40,6 +41,7 @@
             font-weight: 700;
             src: local('Quicksand Bold'), local('Quicksand-Bold'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_pkHEYT8L_FYzokA.woff2) format('woff2');
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            font-display: swap;
         }
     </style>
 </head>
@@ -62,7 +64,7 @@
                 <picture>
                     <source srcset="images/adam.webp" type="image/webp">
                     <source srcset="images/adam.jpg" type="image/jpeg">
-                    <img src="images/adam.jpg" alt="Adam Bar">
+                    <img src="images/adam.jpg" width="330" height="330" alt="Adam Bar">
                 </picture>
             </span>
             <div class="content">
@@ -110,7 +112,9 @@
         <div class="inner">
             <section class="spotlight">
                 <span class="image">
-                    <a href="https://whatwebcando.today" target="_blank"><img src="images/wwcd.png" alt="What Web Can Do Today?" loading="lazy"/></a>
+                    <a href="https://whatwebcando.today" target="_blank">
+                        <img src="images/wwcd.png" alt="What Web Can Do Today?" loading="lazy" width="1000" height="624"/>
+                    </a>
                 </span>
                 <div class="content">
                     <header>
@@ -175,7 +179,7 @@
                         <picture>
                             <source srcset="images/codeeurope.webp" type="image/webp">
                             <source srcset="images/codeeurope.jpeg" type="image/jpeg">
-                            <img src="images/codeeurope.jpeg" alt="Me at Code Europe, Wrocław 2017" loading="lazy">
+                            <img src="images/codeeurope.jpeg" alt="Me at Code Europe, Wrocław 2017" loading="lazy" width="640" height="853">
                         </picture>
                     </span>
                     <div class="content">
@@ -210,7 +214,7 @@
                     <picture>
                         <source srcset="images/audits.webp" type="image/webp">
                         <source srcset="images/audits.jpeg" type="image/jpeg">
-                        <img src="images/audits.jpeg" alt="Front-end Audits" loading="lazy">
+                        <img src="images/audits.jpeg" alt="Front-end Audits" loading="lazy" width="640" height="480">
                     </picture>
                 </span>
                 <div class="content">
@@ -227,7 +231,7 @@
                     <picture>
                         <source srcset="images/consulting.webp" type="image/webp">
                         <source srcset="images/consulting.jpeg" type="image/jpeg">
-                        <img src="images/consulting.jpeg" alt="Mobile Web Consulting" loading="lazy">
+                        <img src="images/consulting.jpeg" alt="Mobile Web Consulting" loading="lazy" width="640" height="444">
                     </picture>
                 </span>
                 <div class="content">
