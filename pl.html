@@ -109,7 +109,7 @@
         <div class="inner">
             <section class="spotlight">
                 <span class="image">
-                    <a href="https://whatwebcando.today" target="_blank"><img src="images/wwcd.png" alt="What Web Can Do Today?"/></a>
+                    <a href="https://whatwebcando.today" target="_blank"><img src="images/wwcd.png" alt="What Web Can Do Today?" loading="lazy"/></a>
                 </span>
                 <div class="content">
                     <header>
@@ -134,10 +134,10 @@
                 <section class="spotlight">
                     <div class="videos">
                         <div class="video-wrapper">
-                            <iframe width="400" height="225" src="https://www.youtube.com/embed/tSVXspwx018?rel=0" frameborder="0" allowfullscreen></iframe>
+                            <div class="video-placeholder" style="background-image: url(https://img.youtube.com/vi/tSVXspwx018/0.jpg)" data-src="https://www.youtube.com/embed/tSVXspwx018?rel=0&showinfo=0&autoplay=1"></div>
                         </div>
                         <div class="video-wrapper">
-                            <iframe width="400" height="225" src="https://www.youtube.com/embed/jOGhpgAaefw?rel=0" frameborder="0" allowfullscreen></iframe>
+                            <div class="video-placeholder" style="background-image: url(https://img.youtube.com/vi/jOGhpgAaefw/0.jpg)" data-src="https://www.youtube.com/embed/jOGhpgAaefw?rel=0&showinfo=0&autoplay=1"></div>
                         </div>
                     </div>
                     <div class="content">
@@ -176,7 +176,7 @@
                 <h2>Szkolenia</h2>
                 <section class="spotlight">
                     <span class="image">
-                        <img src="images/codeeurope.jpg" alt="Ja na Code Europe, Wrocław 2017">
+                        <img src="images/codeeurope.jpg" alt="Ja na Code Europe, Wrocław 2017" loading="lazy">
                     </span>
                     <div class="content">
                         <p>Chcesz wziąć udział w szkoleniu na temat możliwości nowoczesnych stron mobilnych? Jako doświadczony trener, z przyjemnością poprowadzę je dla Ciebie i Twojego zespołu.
@@ -207,7 +207,7 @@
         <div class="inner">
             <section class="spotlight">
                 <span class="image">
-                    <img src="images/audits.jpeg" alt="Audyty Front-endu"/>
+                    <img src="images/audits.jpeg" alt="Audyty Front-endu" loading="lazy"/>
                 </span>
                 <div class="content">
                     <header>
@@ -220,7 +220,7 @@
             </section>
             <section class="spotlight">
                 <span class="image">
-                    <img src="images/consulting.jpeg" alt="Consulting - Mobile Web"/>
+                    <img src="images/consulting.jpeg" alt="Consulting - Mobile Web" loading="lazy"/>
                 </span>
                 <div class="content">
                     <header>
@@ -261,6 +261,13 @@
 
     ga('create', 'UA-106129996-1', 'auto');
     ga('send', 'pageview');
+
+    // videos
+    document.querySelectorAll('.video-placeholder').forEach(function (video) {
+        video.onclick = function () {
+            video.parentElement.innerHTML = '<iframe width="400" height="255" src="' + video.dataset.src + '" frameborder="0" allowfullscreen></iframe>';
+        };
+    });
 </script>
 </body>
 </html>

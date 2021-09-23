@@ -899,6 +899,13 @@ body.is-loading #intro .content {
     max-width: 400px;
 }
 
+.video-placeholder {
+    height: 225px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
     .video-wrapper {
         width: 400px;
