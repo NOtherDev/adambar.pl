@@ -840,28 +840,6 @@ section.special header h2:before, section.special header h3:before, section.spec
     transition-delay: 0.35s;
 }
 
-body.is-loading #intro .image {
-    opacity: 0;
-}
-
-body.is-loading #intro .content {
-    -moz-transform: translateX(0.5em);
-    -webkit-transform: translateX(0.5em);
-    -ms-transform: translateX(0.5em);
-    transform: translateX(0.5em);
-    transition: transform;
-    opacity: 0;
-}
-
-@media screen and (max-width: 980px) {
-    body.is-loading #intro .content {
-        -moz-transform: translateY(0.35em);
-        -webkit-transform: translateY(0.35em);
-        -ms-transform: translateY(0.35em);
-        transform: translateY(0.35em);
-    }
-}
-
 /* Icons */
 
 .icon {

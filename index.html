@@ -40,15 +40,6 @@
 </head>
 <body>
 
-<script>
-    document.body.className = 'is-loading';
-    window.addEventListener('load', function () {
-        setTimeout(function () {
-            document.body.className = '';
-        }, 100);
-    });
-</script>
-
 <!-- Header -->
 <header id="header">
     <nav>
@@ -62,7 +53,13 @@
 
     <section id="intro" class="wrapper featured style1">
         <div class="inner">
-            <span class="image"><img src="images/adam.jpg" alt="Adam Bar"/></span>
+            <span class="image">
+                <picture>
+                    <source srcset="images/adam.webp" type="image/webp">
+                    <source srcset="images/adam.jpg" type="image/jpeg">
+                    <img src="images/adam.jpg" alt="Adam Bar">
+                </picture>
+            </span>
             <div class="content">
                 <header>
                     <h1>Adam Bar</h1>
@@ -170,7 +167,11 @@
                 <h2>Workshops</h2>
                 <section class="spotlight">
                     <span class="image">
-                        <img src="images/codeeurope.jpg" alt="Me at Code Europe, Wrocław 2017" loading="lazy">
+                        <picture>
+                            <source srcset="images/codeeurope.webp" type="image/webp">
+                            <source srcset="images/codeeurope.jpeg" type="image/jpeg">
+                            <img src="images/codeeurope.jpeg" alt="Me at Code Europe, Wrocław 2017" loading="lazy">
+                        </picture>
                     </span>
                     <div class="content">
                         <p>Interested in a workshop about modern Mobile Web capabilities? As an experienced trainer I'll be happy to run one for you and your team.
@@ -201,7 +202,11 @@
         <div class="inner">
             <section class="spotlight">
                 <span class="image">
-                    <img src="images/audits.jpeg" alt="Front-end Audits" loading="lazy"/>
+                    <picture>
+                        <source srcset="images/audits.webp" type="image/webp">
+                        <source srcset="images/audits.jpeg" type="image/jpeg">
+                        <img src="images/audits.jpeg" alt="Front-end Audits" loading="lazy">
+                    </picture>
                 </span>
                 <div class="content">
                     <header>
@@ -214,7 +219,11 @@
             </section>
             <section class="spotlight">
                 <span class="image">
-                    <img src="images/consulting.jpeg" alt="Mobile Web Consulting" loading="lazy"/>
+                    <picture>
+                        <source srcset="images/consulting.webp" type="image/webp">
+                        <source srcset="images/consulting.jpeg" type="image/jpeg">
+                        <img src="images/consulting.jpeg" alt="Mobile Web Consulting" loading="lazy">
+                    </picture>
                 </span>
                 <div class="content">
                     <header>

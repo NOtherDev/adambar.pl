@@ -40,15 +40,6 @@
 </head>
 <body>
 
-<script>
-    document.body.className = 'is-loading';
-    window.addEventListener('load', function () {
-        setTimeout(function () {
-            document.body.className = '';
-        }, 100);
-    });
-</script>
-
 <!-- Header -->
 <header id="header">
     <nav>
@@ -62,7 +53,13 @@
 
     <section id="intro" class="wrapper featured style1">
         <div class="inner">
-            <span class="image"><img src="images/adam.jpg" alt="Adam Bar"/></span>
+            <span class="image">
+                <picture>
+                    <source srcset="images/adam.webp" type="image/webp">
+                    <source srcset="images/adam.jpg" type="image/jpeg">
+                    <img src="images/adam.jpg" alt="Adam Bar">
+                </picture>
+            </span>
             <div class="content">
                 <header>
                     <h1>Adam Bar</h1>
@@ -176,7 +173,11 @@
                 <h2>Szkolenia</h2>
                 <section class="spotlight">
                     <span class="image">
-                        <img src="images/codeeurope.jpg" alt="Ja na Code Europe, Wrocław 2017" loading="lazy">
+                        <picture>
+                            <source srcset="images/codeeurope.webp" type="image/webp">
+                            <source srcset="images/codeeurope.jpeg" type="image/jpeg">
+                            <img src="images/codeeurope.jpeg" alt="Ja na Code Europe, Wrocław 2017" loading="lazy">
+                        </picture>
                     </span>
                     <div class="content">
                         <p>Chcesz wziąć udział w szkoleniu na temat możliwości nowoczesnych stron mobilnych? Jako doświadczony trener, z przyjemnością poprowadzę je dla Ciebie i Twojego zespołu.
@@ -207,7 +208,11 @@
         <div class="inner">
             <section class="spotlight">
                 <span class="image">
-                    <img src="images/audits.jpeg" alt="Audyty Front-endu" loading="lazy"/>
+                    <picture>
+                        <source srcset="images/audits.webp" type="image/webp">
+                        <source srcset="images/audits.jpeg" type="image/jpeg">
+                        <img src="images/audits.jpeg" alt="Audyty Front-endu" loading="lazy">
+                    </picture>
                 </span>
                 <div class="content">
                     <header>
@@ -220,7 +225,11 @@
             </section>
             <section class="spotlight">
                 <span class="image">
-                    <img src="images/consulting.jpeg" alt="Consulting - Mobile Web" loading="lazy"/>
+                    <picture>
+                        <source srcset="images/consulting.webp" type="image/webp">
+                        <source srcset="images/consulting.jpeg" type="image/jpeg">
+                        <img src="images/consulting.jpeg" alt="Consulting - Mobile Web" loading="lazy">
+                    </picture>
                 </span>
                 <div class="content">
                     <header>
