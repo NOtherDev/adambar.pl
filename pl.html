@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl-PL">
 <head>
     <title>Adam Bar</title>
     <meta charset="utf-8"/>
@@ -77,6 +77,7 @@
                 <footer>
                     <ul class="actions">
                         <li><a href="#about" class="button big">O mnie</a></li>
+                        <li><a href="#audits" class="button big">Audyty Web Performance</a></li>
                         <li><a href="#workshops" class="button big">Szkolenia</a></li>
                         <li><a href="#services" class="button big">Usługi</a></li>
                     </ul>
@@ -92,6 +93,7 @@
 
                 <ul class="alt">
                     <li><strong>pasjonat Mobile Web'a</strong></li>
+                    <li><strong>ekspert Web Performance</strong></li>
                     <li><strong>twórca serwisu <a href="https://whatwebcando.today/" target="_blank">What Web Can Do Today</a></strong></li>
                     <li><strong>trener technologii front-endowych w <a href="https://bottega.com.pl/trener-adam-bar" target="_blank">Bottega IT Minds</a></strong></li>
                     <li><strong>full-stack developer i tech lead doświadczony w kilku stosach technologicznych, ostatnio wierny TypeScriptowi</strong></li>
@@ -101,7 +103,7 @@
                     Ruby, Javę i Objective-C, ale zawsze wracam do Weba, którego cenię za otwartość i dostępność
                     dla wszystkich. I choć uwielbiam proste struktury, proste reguły i porządek, których nieraz próżno
                     w Webie szukać, to właśnie technologie webowe są moją programistyczną pasją.</p>
-                <p>Na codzień tworzę wszechstronne aplikacje webowe jako Full-Stack Software Developer,
+                <p>Na codzień tworzę wszechstronne aplikacje webowe jako Full-Stack Software Developer, przeprowadzam audyty wydajnościowe front-endu,
                     uczę technologii front-endowych jako trener <a href="https://bottega.com.pl/trener-adam-bar" target="_blank">Bottega IT Minds</a>
                     oraz prowadzę stronę, która ma na celu przegląd możliwości platformy Webowej na urządzeniach mobilnych
                     – <a href="https://whatwebcando.today/" target="_blank">What Web Can Do Today</a>.</p>
@@ -109,23 +111,36 @@
         </div>
     </section>
 
-    <section class="wrapper style3 special" id="portfolio">
+    <section id="audits" class="wrapper style3 special">
         <div class="inner">
+            <header>
+                <h2>Audyty Web Performance</h2>
+            </header>
             <section class="spotlight">
                 <span class="image">
-                    <a href="https://whatwebcando.today" target="_blank">
-                        <img src="images/wwcd.png" alt="What Web Can Do Today?" loading="lazy" width="1000" height="624"/>
-                    </a>
+                    <picture>
+                        <source srcset="images/devdays.webp" type="image/webp">
+                        <source srcset="images/devdays.jpeg" type="image/jpeg">
+                        <img src="images/devdays.jpeg" alt="Ja na DevDays, Wilno 2019" loading="lazy" width="1169" height="945">
+                    </picture>
                 </span>
                 <div class="content">
-                    <header>
-                        <h3><a href="https://whatwebcando.today" target="_blank">What Web Can Do Today?</a></h3>
-                    </header>
-                    <p>Czy mogę zbudować swoją aplikację w technologiach Webowych?
-                        Przegląd możliwości platformy Webowej na urządzeniach mobilnych.</p>
+                    <p class="header">Znaczenie wydajności aplikacji webowych rośnie z każdym miesiącem, w szczególności gdy Google coraz intensywniej używa jej do wyznaczenia pozycji strony w rankingu. Posiadanie dziś wolnej strony po prostu się nie opłaca.</p>
+
+                    <p>Mój audyt pomoże Twojemu zespołowi developerskiemu naprawić "wąskie gardła" i poprawić wyniki metryk wydajnościowych Twojej aplikacji. W ramach audytu otrzymasz:</p>
+
+                    <ul class="alt">
+                        <li>analizę obecnych i potencjalnych wartości metryk wydajnościowych,</li>
+                        <li>szczegółowy raport o zidentyfikowanych problemach wydajnościowych i polach do poprawy,</li>
+                        <li>listę rekomendacji na szczegółowym poziomie technicznym,</li>
+                        <li>szacunkowy koszt implementacji i wpływ proponowanych zmian na metryki wydajnościowe,</li>
+                        <li>techniczne spotkanie z Twoim zespołem w celu omówienia przedstawionego raportu.</li>
+                    </ul>
+
                     <footer>
                         <ul class="actions">
-                            <li><a href="https://whatwebcando.today" target="_blank" class="button">Zobacz</a></li>
+                            <!--<li><a href="/audyt-web-performance.html" class="button">Więcej informacji</a></li>-->
+                            <li><a href="mailto:audyt@adambar.pl" class="button">Skontaktuj się</a></li>
                         </ul>
                     </footer>
                 </div>
@@ -133,87 +148,7 @@
         </div>
     </section>
 
-    <section class="wrapper style2 special">
-        <div class="inner">
-            <header id="speaking">
-                <h2>Prezentacje</h2>
-                <section class="spotlight">
-                    <div class="videos">
-                        <div class="video-wrapper">
-                            <div class="video-placeholder" style="background-image: url(https://img.youtube.com/vi/tSVXspwx018/0.jpg)" data-src="https://www.youtube.com/embed/tSVXspwx018?rel=0&showinfo=0&autoplay=1"></div>
-                        </div>
-                        <div class="video-wrapper">
-                            <div class="video-placeholder" style="background-image: url(https://img.youtube.com/vi/jOGhpgAaefw/0.jpg)" data-src="https://www.youtube.com/embed/jOGhpgAaefw?rel=0&showinfo=0&autoplay=1"></div>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <ul class="alt">
-                            <li><strong><a href="https://slides.com/adambar/wwcd" target="_blank">What Web Can Do Today?</a></strong><br/>
-                                Code Europe, Wrocław, maj 2017<br/>
-                                Dev#, Gdańsk, wrzesień 2018<br/>
-                            </li>
-                            <li><strong><a href="https://slides.com/adambar/mobilewebperf" target="_blank">Looking for the Holy Grail of Mobile Web Performance</a></strong> (po angielsku)<br/>
-                                DevConf, Kraków, wrzesień 2017 (<a href="https://www.youtube.com/watch?v=tSVXspwx018" target="_blank">🎥 nagranie</a>)<br/>
-                                meet.js Summit, Gdańsk, wrzesień 2017 (<a href="https://www.youtube.com/watch?v=Et7bwk5gQRA" target="_blank">🎥 nagranie</a>)<br/>
-                                HighLoad++, Moskwa, listopad 2017 (<a href="https://www.youtube.com/watch?v=RH9dWEBwsZU" target="_blank">🎥 nagranie</a>)<br/>
-                                Jfokus, Sztokholm, luty 2018 (<a href="https://www.youtube.com/watch?v=RyxlgqbWrGk" target="_blank">🎥 nagranie</a>)<br/>
-                                4Developers, Warszawa, kwiecień 2018 (po polsku; <a href="https://www.youtube.com/watch?v=uorR-mWZgSk" target="_blank">🎥 nagranie</a>)<br/>
-                            </li>
-                            <li><strong><a href="https://slides.com/adambar/mobilewebperf" target="_blank">Looking for the Holy Grail of Mobile Web Performance</a></strong> (po polsku)<br/>
-                                4Developers, Warszawa, kwiecień 2018 (<a href="https://www.youtube.com/watch?v=uorR-mWZgSk" target="_blank">🎥 nagranie</a>)<br/>
-                            </li>
-                            <li><strong><a href="https://slides.com/adambar/lit-html" target="_blank">What Would You Do Without a Framework? Front-End Anew with Lit-HTML</a></strong> (po angielsku)<br/>
-                                DevDays, Wilno, maj 2019 (<a href="https://www.youtube.com/watch?v=eSILtbWYrNc" target="_blank">🎥 nagranie</a>)<br/>
-                            </li>
-                            <li><strong><a href="https://slides.com/adambar/lit-html" target="_blank">A co TY zrobisz bez frameworka? Front-end na nowo z lit-html</a></strong> (po polsku)<br/>
-                                4Developers, Warszawa, kwiecień 2019 (<a href="https://www.youtube.com/watch?v=jOGhpgAaefw" target="_blank">🎥 nagranie</a>)<br/>
-                            </li>
-                            <li><strong><a href="https://www.youtube.com/watch?v=2LiVkyS9Co4" target="_blank">🎥 Webinar: Jak zostać Fullstackiem?</a></strong> (wraz z <a href="https://michalczukm.xyz" target="_blank">Michałem Michalczukiem</a>)</li>
-                        </ul>
-                    </div>
-                </section>
-            </header>
-        </div>
-    </section>
-
-    <section class="wrapper style3 special">
-        <div class="inner">
-            <header id="workshops">
-                <h2>Szkolenia</h2>
-                <section class="spotlight">
-                    <span class="image">
-                        <picture>
-                            <source srcset="images/codeeurope.webp" type="image/webp">
-                            <source srcset="images/codeeurope.jpeg" type="image/jpeg">
-                            <img src="images/codeeurope.jpeg" alt="Ja na Code Europe, Wrocław 2017" loading="lazy" width="640" height="853">
-                        </picture>
-                    </span>
-                    <div class="content">
-                        <p>Chcesz wziąć udział w szkoleniu na temat możliwości nowoczesnych stron mobilnych? Jako doświadczony trener, z przyjemnością poprowadzę je dla Ciebie i Twojego zespołu.
-                            Zakres tematyczny może zawierać:</p>
-
-                        <ul class="alt">
-                            <li>Progresywne aplikacje Webowe – fakty i mity</li>
-                            <li>Instalację na ekranie głównym i integrację z systemem</li>
-                            <li>Wsparcie trybu Offline z Service Workerem</li>
-                            <li>Powiadomienia push i notyfikacje</li>
-                            <li>Nowe API: Payment Request, Credentials Management, Web Share</li>
-                            <li>Optymalizację czasu ładowania strony</li>
-                            <li>jak i szereg innych tematów opisywanych na mojej stronie What Web Can Do Today</li>
-                        </ul>
-
-                        <footer>
-                            <ul class="actions">
-                                <li><a href="/szkolenie-pwa.html" class="button">Więcej informacji</a></li>
-                            </ul>
-                        </footer>
-                    </div>
-                </section>
-            </header>
-        </div>
-    </section>
-
-    <section class="wrapper style1 special" id="services">
+    <section id="services" class="wrapper style1 special">
         <div class="inner">
             <section class="spotlight">
                 <span class="image">
@@ -253,6 +188,113 @@
                 <p class="content">Moje doświadczenie bazuje wokół <strong>Progresywnych Aplikacji Webowych</strong> oraz stosu technologicznego <strong>dużych SPA z React.js'em</strong> tech stack
                     z użyciem Reduksa, web socketów, map oraz integracji z Blockchainem.</p>
             </section>
+        </div>
+    </section>
+
+    <section id="workshops" class="wrapper style3 special">
+        <div class="inner">
+            <header>
+                <h2>Szkolenia</h2>
+                <section class="spotlight">
+                    <span class="image">
+                        <picture>
+                            <source srcset="images/codeeurope.webp" type="image/webp">
+                            <source srcset="images/codeeurope.jpeg" type="image/jpeg">
+                            <img src="images/codeeurope.jpeg" alt="Ja na Code Europe, Wrocław 2017" loading="lazy" width="640" height="853">
+                        </picture>
+                    </span>
+                    <div class="content">
+                        <p>Chcesz wziąć udział w szkoleniu na temat możliwości nowoczesnych stron mobilnych? Jako doświadczony trener, z przyjemnością poprowadzę je dla Ciebie i Twojego zespołu.
+                            Zakres tematyczny może zawierać:</p>
+
+                        <ul class="alt">
+                            <li>Progresywne aplikacje Webowe – fakty i mity</li>
+                            <li>Instalację na ekranie głównym i integrację z systemem</li>
+                            <li>Wsparcie trybu Offline z Service Workerem</li>
+                            <li>Powiadomienia push i notyfikacje</li>
+                            <li>Nowe API: Payment Request, Credentials Management, Web Share</li>
+                            <li>Optymalizację czasu ładowania strony</li>
+                            <li>jak i szereg innych tematów opisywanych na mojej stronie What Web Can Do Today</li>
+                        </ul>
+
+                        <footer>
+                            <ul class="actions">
+                                <li><a href="/szkolenie-pwa.html" class="button">Więcej informacji</a></li>
+                            </ul>
+                        </footer>
+                    </div>
+                </section>
+            </header>
+        </div>
+    </section>
+
+    <section  id="portfolio" class="wrapper style2 special">
+        <div class="inner">
+            <section class="spotlight">
+                <span class="image">
+                    <a href="https://whatwebcando.today" target="_blank">
+                        <img src="images/wwcd.png" alt="What Web Can Do Today?" loading="lazy" width="1000" height="624"/>
+                    </a>
+                </span>
+                <div class="content">
+                    <header>
+                        <h3><a href="https://whatwebcando.today" target="_blank">What Web Can Do Today?</a></h3>
+                    </header>
+                    <p>Czy mogę zbudować swoją aplikację w technologiach Webowych?
+                        Przegląd możliwości platformy Webowej na urządzeniach mobilnych.</p>
+                    <footer>
+                        <ul class="actions">
+                            <li><a href="https://whatwebcando.today" target="_blank" class="button">Zobacz</a></li>
+                        </ul>
+                    </footer>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section id="speaking" class="wrapper style3 special">
+        <div class="inner">
+            <header>
+                <h2>Prezentacje</h2>
+                <section class="spotlight">
+                    <div class="videos">
+                        <div class="video-wrapper">
+                            <div class="video-placeholder" style="background-image: url(https://img.youtube.com/vi/tSVXspwx018/0.jpg)" data-src="https://www.youtube.com/embed/tSVXspwx018?rel=0&showinfo=0&autoplay=1"></div>
+                        </div>
+                        <div class="video-wrapper">
+                            <div class="video-placeholder" style="background-image: url(https://img.youtube.com/vi/jOGhpgAaefw/0.jpg)" data-src="https://www.youtube.com/embed/jOGhpgAaefw?rel=0&showinfo=0&autoplay=1"></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <ul class="alt">
+                            <li><strong><a href="https://slides.com/adambar/wwcd" target="_blank">What Web Can Do Today?</a></strong><br/>
+                                Code Europe, Wrocław, maj 2017<br/>
+                                Dev#, Gdańsk, wrzesień 2018<br/>
+                            </li>
+                            <li><strong><a href="https://slides.com/adambar/mobilewebperf" target="_blank">Looking for the Holy Grail of Mobile Web Performance</a></strong> (po angielsku)<br/>
+                                DevConf, Kraków, wrzesień 2017 (<a href="https://www.youtube.com/watch?v=tSVXspwx018" target="_blank">🎥 nagranie</a>)<br/>
+                                meet.js Summit, Gdańsk, wrzesień 2017 (<a href="https://www.youtube.com/watch?v=Et7bwk5gQRA" target="_blank">🎥 nagranie</a>)<br/>
+                                HighLoad++, Moskwa, listopad 2017 (<a href="https://www.youtube.com/watch?v=RH9dWEBwsZU" target="_blank">🎥 nagranie</a>)<br/>
+                                Jfokus, Sztokholm, luty 2018 (<a href="https://www.youtube.com/watch?v=RyxlgqbWrGk" target="_blank">🎥 nagranie</a>)<br/>
+                                4Developers, Warszawa, kwiecień 2018 (po polsku; <a href="https://www.youtube.com/watch?v=uorR-mWZgSk" target="_blank">🎥 nagranie</a>)<br/>
+                            </li>
+                            <li><strong><a href="https://slides.com/adambar/mobilewebperf" target="_blank">Looking for the Holy Grail of Mobile Web Performance</a></strong> (po polsku)<br/>
+                                4Developers, Warszawa, kwiecień 2018 (<a href="https://www.youtube.com/watch?v=uorR-mWZgSk" target="_blank">🎥 nagranie</a>)<br/>
+                            </li>
+                            <li><strong><a href="https://slides.com/adambar/lit-html" target="_blank">What Would You Do Without a Framework? Front-End Anew with Lit-HTML</a></strong> (po angielsku)<br/>
+                                DevDays, Wilno, maj 2019 (<a href="https://www.youtube.com/watch?v=eSILtbWYrNc" target="_blank">🎥 nagranie</a>)<br/>
+                            </li>
+                            <li><strong><a href="https://slides.com/adambar/lit-html" target="_blank">A co TY zrobisz bez frameworka? Front-end na nowo z lit-html</a></strong> (po polsku)<br/>
+                                4Developers, Warszawa, kwiecień 2019 (<a href="https://www.youtube.com/watch?v=jOGhpgAaefw" target="_blank">🎥 nagranie</a>)<br/>
+                            </li>
+                            <li><strong><a href="https://www.youtube.com/watch?v=2LiVkyS9Co4" target="_blank">🎥 Webinar: Jak zostać Fullstackiem?</a></strong> (wraz z <a href="https://michalczukm.xyz" target="_blank">Michałem Michalczukiem</a>)</li>
+                            <li><strong><a href="https://www.youtube.com/watch?v=rPEWEtQFqio" target="_blank">🎙️ Podcast: DevTalk #112 - Progressive Web Apps</a></strong> (u <a href="https://devstyle.pl" target="_blank">Macieja Aniserowicza</a>)</li>
+                            <li><strong><a href="https://www.youtube.com/watch?v=StPM7FtVxR4" target="_blank">🎙️ Podcast: Escola Dev Talks - What Web Can Do Today?</a></strong> (u <a href="https://mateusz.wojczal.com/" target="_blank">Mateusza Wojczala</a>)</li>
+                            <li><strong><a href="https://www.youtube.com/watch?v=hDbZU5ltz68" target="_blank">🎙️ DevRing 2020: PWA vs Native</a></strong> (z <a href="https://twitter.com/k_gluszczyk" target="_blank">Krzysztofem Głuszczykiem</a>)</li>
+                        </ul>
+                    </div>
+                </section>
+            </header>
         </div>
     </section>
 
